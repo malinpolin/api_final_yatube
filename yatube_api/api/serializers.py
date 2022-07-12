@@ -36,11 +36,15 @@ class CommentSerializer(serializers.ModelSerializer):
         slug_field='username',
         default=serializers.CurrentUserDefault()
     )
+    created = serializers.DateTimeField(
+        default=dt.datetime.now(),
+        read_only=True
+    )
 
     class Meta:
         fields = ('id', 'author', 'text', 'created', 'post')
         model = Comment
-        read_only_fields = ('created', )
+        read_only_fields = ('post', )
 
 
 class FollowSerializer(serializers.ModelSerializer):
