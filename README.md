@@ -20,13 +20,13 @@ git clone git@github.com:malinpolin/api_final_yatube.git
 git clone https://github.com/malinpolin/api_final_yatube.git
 ```
 
-### 2. Перейти в директорию /api_final_yatube:
+### 2. Перейти в директорию /api_final_yatube: 
 
 ```bash
 cd api_final_yatube/
 ```
 
-### 3. Cоздать и активировать виртуальное окружение:
+### 3. Cоздать и активировать виртуальное окружение: 
 
 ##### Linux или MacOS
 ```bash
